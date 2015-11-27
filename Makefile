@@ -8,6 +8,7 @@ all:
 
 install:
 	cp $(EXECUTABLE) /usr/bin/
+	gzip -c $(EXECUTABLE).man > /usr/share/man/man1/$(EXECUTABLE).1.gz
 
 clean:
 	rm $(EXECUTABLE)

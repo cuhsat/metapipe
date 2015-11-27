@@ -1,0 +1,27 @@
+.\" Manpage for metapipe.
+.\" Contact christian@uhsat.de to correct errors or typos.
+.TH man 1 "November 2015" "Metapipe" "Metapipe Manual"
+.SH NAME
+Metapipe \- It's about the things you don't say!
+.SH SYNOPSIS
+metapipe [-abmhv] [-n MSECS]
+.SH DESCRIPTION
+Metapipe measures the time between your keystrokes and translates them into
+bytes which are piped out to STDERR while your input goes to STDOUT. So you
+can compose two inputs at once.
+.SH OPTIONS
+.IP "-n"
+Set keystroke threshold (milliseconds)
+.IP "-a"
+Set 7-bit ASCII output mode (default)
+.IP "-b"
+Set 8-bit byte output mode
+.IP "-m"
+Set morse code output mode
+.IP "-h"
+Show usage information
+.IP "-v"
+Show version
+.RE
+.SH AUTHORS
+Christian Uhsat <christian@uhsat.de>
