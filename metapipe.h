@@ -22,7 +22,7 @@
 #ifndef METAPIPE_H
 #define METAPIPE_H
 
-#define VERSION "0.1.0"
+#define VERSION "0.1.1"
 #define THRESHOLD 850
 
 #endif

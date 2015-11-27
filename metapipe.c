@@ -72,7 +72,7 @@ int main(int argc, char **argv)
                 limit = MORSE;
                 break;
 
-            case 'T':
+            case 'n':
                 threshold = atoi(optarg);
                 break;
 
