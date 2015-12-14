@@ -58,6 +58,7 @@ int main(int argc, char **argv)
     long long ks1=0, ks2=0;
     struct timeval tv;
 
+    // parse arguments
     while ((opt = getopt(argc, argv, "abmn:hv")) != -1) {
         switch (opt) {
             case 'a':
@@ -86,25 +87,34 @@ int main(int argc, char **argv)
         }
     }
 
+    // set terminal mode
     atexit(reset_tty);
     system("stty -echo raw");
 
-    while (CR != (c = getchar())) {
+    // take input till line break
+    while (CR != (c = fgetc(stdin))) {
         gettimeofday(&tv, NULL);
+
+        // calculate EPOCH
         ks2 = ((tv.tv_sec * 1000) + (tv.tv_usec / 1000));
 
+        // echo STDIN
         if (isprint(c))
-            putchar(c);
+            fputc(c, stdout);
 
+        // ignore first keystroke
         if (ks1) {
             buffer |= (((ks2 - ks1) > threshold) << i++);
 
+            // is buffer full
             if (i == limit) {
-                if (limit == MORSE) {
-                    fprintf(stderr, buffer ? "-" : ".");
-                } else {
-                    fprintf(stderr, "%c", buffer);
-                }
+
+                // convert to char
+                if (limit == MORSE)
+                    buffer = 0x2E - buffer;
+
+                // flush buffer to STDERR
+                fputc(buffer, stderr);
                 buffer = i = 0;
             }
         }
@@ -112,6 +122,5 @@ int main(int argc, char **argv)
         ks1 = ks2;
     };
 
-    fputc(CR, stderr);
     return(EXIT_SUCCESS);
 }
