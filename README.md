@@ -9,7 +9,7 @@ you can compose two inputs at once.
 Usage
 -----
 ```
-$ metapipe [-abmhv] [-n MSECS]
+$ metapipe [-abmhlv] [-n MSECS]
 ```
 
 Options
@@ -19,6 +19,7 @@ Options
 * `-b` Set 8-bit byte output mode
 * `-m` Set morse code output mode
 * `-h` Show usage information
+* `-l` Show license
 * `-v` Show version
 
 License

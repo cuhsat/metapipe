@@ -1,6 +1,6 @@
 .\" Manpage for metapipe.
 .\" Contact christian@uhsat.de to correct errors or typos.
-.TH man 1 "November 2015" "Metapipe" "Metapipe Manual"
+.TH man 1 "December 2015" "Metapipe" "Metapipe Manual"
 .SH NAME
 Metapipe \- It's about the things you don't say!
 .SH SYNOPSIS
@@ -20,6 +20,8 @@ Set 8-bit byte output mode
 Set morse code output mode
 .IP "-h"
 Show usage information
+.IP "-l"
+Show license
 .IP "-v"
 Show version
 .RE

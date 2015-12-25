@@ -59,7 +59,7 @@ int main(int argc, char **argv)
     struct timeval tv;
 
     // parse arguments
-    while ((opt = getopt(argc, argv, "abmn:hv")) != -1) {
+    while ((opt = getopt(argc, argv, "abmn:hlv")) != -1) {
         switch (opt) {
             case 'a':
                 limit = ASCII;
@@ -76,6 +76,10 @@ int main(int argc, char **argv)
             case 'n':
                 threshold = atoi(optarg);
                 break;
+
+            case 'l':
+                printf("Licensed under the terms of the MIT License.\n");
+                exit(EXIT_SUCCESS);
 
             case 'v':
                 printf("metapipe %s\n", VERSION);
