@@ -48,8 +48,7 @@ void reset_tty() {
 /*
  * Metapipe main.
  */
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     int opt, c, i=0, threshold=THRESHOLD;
 
     buffer_limit limit=ASCII;
