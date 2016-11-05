@@ -1,4 +1,4 @@
-Metapipe
+Metapipe ![Build](https://img.shields.io/travis/cuhsat/metapipe.svg)
 ========
 It's about the things you don't say!
 
