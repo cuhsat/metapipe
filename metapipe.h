@@ -21,7 +21,7 @@
 #ifndef METAPIPE_H
 #define METAPIPE_H
 
-#define VERSION "0.2.1"
+#define VERSION "0.2.2"
 #define THRESHOLD 1000
 
-#endif
+#endif // METAPIPE_H

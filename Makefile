@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-pedantic -ansi -std=c99 -Wall -Werror
+CFLAGS=-std=gnu99 -pedantic -Wall -Werror
 SOURCES=metapipe.c
 EXECUTABLE=metapipe
 
