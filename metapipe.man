@@ -17,7 +17,7 @@ Set 7-bit ASCII output mode (default)
 .IP "-b"
 Set 8-bit byte output mode
 .IP "-m"
-Set morse code output mode
+Set morse-code output mode
 .IP "-h"
 Show usage information
 .IP "-l"
