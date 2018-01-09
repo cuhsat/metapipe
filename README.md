@@ -3,8 +3,8 @@ Metapipe ![Build](https://img.shields.io/travis/cuhsat/metapipe.svg)
 It's about the things you don't say!
 
 Metapipe measures the time between your keystrokes and translates them into
-bytes which are piped out to `STDERR` while your input goes to `STDOUT`. So
-you can compose two inputs at once.
+bytes which are piped out to `STDERR` while your normal output goes to
+`STDOUT`. So you can compose two outputs at once.
 
 Usage
 -----
